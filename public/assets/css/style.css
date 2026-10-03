@@ -1,0 +1,300 @@
+/* Plantilla "Nocturno Urbano" para Barbería */
+
+/* Carousel Caption con overlay de gradiente */
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: linear-gradient(45deg, rgba(0,0,0,0.7), rgba(50,50,50,0.7));
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.carousel-caption h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+    margin-bottom: 20px;
+}
+
+/* Botón del carousel estilo Nocturno */
+.carousel-caption .btn {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.carousel-caption .btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Importar tipografías clásicas y elegantes */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Cinzel:wght@700&display=swap');
+
+body {
+    font-family: 'Cinzel', serif;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Botón de reserva alternativo estilo Nocturno */
+.btn-primary {
+    background-color: #000;
+    color: #e0e0e0;
+    border: 2px solid #e0e0e0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e0e0e0;
+    color: #000;
+    border: 2px solid #000;
+}
+
+/* Navbar y Footer estilo Nocturno Urbano */
+.navbar, footer {
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    background-color: #000;
+    color: #e0e0e0;
+}
+
+.navbar a, footer a {
+    color: #e0e0e0;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover, footer a:hover {
+    color: #b71c1c;
+}
+
+/* Botón flotante de WhatsApp en tema Nocturno */
+.whatsapp-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 1000;
+    width: 55px;
+    height: 55px;
+    background-color: #b71c1c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-button img {
+    width: 70%;
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+/* Tarjetas (Cards) estilo Nocturno */
+.card {
+    background-color: #1e1e1e;
+    border: 2px solid #b71c1c;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #b71c1c;
+}
+
+.card-text {
+    color: #b71c1c;
+}
+/* Footer estilo Nocturno */
+footer {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    color: #e0e0e0;
+}
+
+/* Botones de redes sociales estilo Nocturno */
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    padding: 8px;
+    border: 2px solid #e0e0e0;
+    border-radius: 50%;
+    color: #e0e0e0;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    margin: 5px;
+}
+
+.social-btn:hover {
+    background: #e0e0e0;
+    color: #000;
+    border-color: #000;
+    transform: scale(1.1);
+}
+
+/* Utilidades y clases generales */
+.bg-light {
+    background-color: #333 !important;
+}
+
+.rounded {
+    border-radius: 15px !important;
+}
+
+.shadow-sm {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+}
+
+.text-primary {
+    color: #b71c1c !important;
+}
+
+.text-muted{
+    color: #b71c1c !important;
+}
+.table th, .table td {
+    vertical-align: middle;
+    border-top: 1px solid #444;
+}
+
+.table-dark {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Estilos para servicios en tema Nocturno */
+.service-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.7);
+}
+
+.img-fluid {
+    border-radius: 15px;
+}
+
+/* Sección de reserva en estilo Nocturno */
+.reserva-container {
+    max-width: 100%;
+    padding: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+.reserva-card {
+    border-radius: 15px;
+    background-color: #1a1a1a;
+}
+
+.reserva-header {
+    background-color: #b71c1c;
+    color: #fff;
+    padding: 25px;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+    font-family: 'Old Standard TT', serif;
+}
+
+.reserva-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.reserva-subtitle {
+    font-size: 1rem;
+    color: #ccc;
+    font-style: italic;
+}
+
+.reserva-body {
+    background-color: #2a2a2a;
+    padding: 30px;
+    color: #ddd;
+    font-family: 'Roboto', sans-serif;
+}
+
+.reserva-label {
+    font-weight: bold;
+    color: #ddd;
+    font-size: 1rem;
+}
+
+.reserva-input, .reserva-select {
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    background-color: #333;
+    color: #ddd;
+    padding: 12px;
+    font-size: 1rem;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reserva-input:focus, .reserva-select:focus {
+    border-color: #b71c1c;
+    box-shadow: 0 0 5px #b71c1c;
+    outline: none;
+}
+
+.reserva-button {
+    background: #b71c1c;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Old Standard TT', serif;
+    border: none;
+    cursor: pointer;
+}
+
+.reserva-button:hover {
+    background: #fff;
+    color: #000;
+    transform: scale(1.05);
+}

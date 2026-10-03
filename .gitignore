@@ -1,0 +1,35 @@
+# Dependencies
+/vendor/
+/node_modules/
+
+# Environment / config
+.env
+.env.local
+.env.production
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-*
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# Backups
+*.sql.bak
+*.zip
+
+# Build artifacts
+build/
+dist/
+
+# Composer
+composer.lock

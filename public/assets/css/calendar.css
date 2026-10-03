@@ -1,0 +1,176 @@
+ /* Nuevo diseño del calendario */
+ #calendar {
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.fc-header-toolbar {
+    padding: 1rem;
+    background: #f8f9fa;
+    margin: 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.fc-toolbar-title {
+    color: #2d3748;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.fc-button-primary {
+    background-color: #4a5568 !important;
+    border-color: #4a5568 !important;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px !important;
+}
+
+.fc-button-primary:hover {
+    background-color: #2d3748 !important;
+    transform: translateY(-1px);
+}
+
+.fc-daygrid-event {
+    border-radius: 6px;
+    padding: 8px;
+    margin: 2px;
+    border: none !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.fc-daygrid-event:hover {
+    transform: translateY(-2px);
+}
+
+.fc-event-time {
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.fc-event-title {
+    margin-top: 4px;
+    display: block;
+    font-size: 0.9em;
+}
+
+/* Colores de estado */
+.event-estado-confirmada {
+    background: #48bb78;
+    color: white;
+}
+
+.event-estado-pendiente {
+    background: #ecc94b;
+    color: #2d3748;
+}
+
+.event-estado-cancelada {
+    background: #f56565;
+    color: white;
+}
+
+/* Vista móvil */
+@media (max-width: 768px) {
+    #calendar {
+        height: auto;
+        min-height: 500px;
+    }
+    
+    .fc-header-toolbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .fc-toolbar-title {
+        font-size: 1.2rem;
+    }
+}
+
+/* Mejoras en el modal */
+.modal-acciones .modal-content {
+    border-radius: 12px;
+    border: none;
+}
+
+.modal-acciones .modal-header {
+    background: #4a5568;
+    color: white;
+    border-radius: 12px 12px 0 0;
+}
+
+.modal-acciones .modal-title {
+    font-weight: 600;
+}
+
+.modal-acciones .btn-danger {
+    background: #f56565;
+    border-color: #f56565;
+}
+
+.modal-acciones .btn-primary {
+    background: #4a5568;
+    border-color: #4a5568;
+}
+/* Añade estos estilos al CSS existente */
+.fc-daygrid-event {
+min-height: 60px; /* Altura mínima para contener el texto */
+padding: 6px 8px !important;
+overflow: hidden !important;
+}
+
+.fc-event-time {
+font-size: 0.85em;
+margin-bottom: 2px;
+display: block;
+}
+
+.fc-event-title {
+font-size: 0.8em;
+line-height: 1.3;
+white-space: normal !important; /* Permite el wrap del texto */
+word-wrap: break-word !important;
+max-height: 40px; /* Limita la altura del texto */
+overflow: hidden;
+}
+
+.fc-daygrid-block-event .fc-event-main {
+padding: 2px 0;
+}
+
+/* Ajustar para vista móvil */
+@media (max-width: 768px) {
+.fc-daygrid-event {
+    min-height: 50px;
+    padding: 4px 6px !important;
+}
+
+.fc-event-time {
+    font-size: 0.75em;
+}
+
+.fc-event-title {
+    font-size: 0.7em;
+    max-height: 36px;
+}
+}
+
+/* Asegurar que el badge de estado no cause desborde */
+.badge {
+display: block;
+width: fit-content;
+margin-top: 4px;
+padding: 3px 6px;
+font-size: 0.7em !important;
+}
+.truncate-text {
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+max-width: 95%;
+}
